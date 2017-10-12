@@ -60,25 +60,7 @@ public class LoginPage {
 		homePage.loginButton.click();
 		String propFilePath = null;
 		OR = new Properties();
-		/*try {
-			
-			propFilePath = new File(getClass().getClassLoader()
-					.getResource("src/main/resources/OR.properties")
-					.toURI()).getAbsolutePath();
-			
-			URL is = getClass().getClassLoader().getResource("OR.properties");
-			File file = new File(is.toURI());
-			propFilePath = file.getAbsolutePath();
-			if (!file.exists()) {
-				propFilePath = new File(getClass().getClassLoader()
-						.getResource("src/main/resources/OR.properties")
-						.toURI()).getAbsolutePath();
-			}
-			
-		} catch (Exception e) {
-			test.log(LogStatus.ERROR, e.getMessage());
-			e.printStackTrace();
-		}*/
+		
 		try {
 			OR.load(new FileInputStream("src/main/resources/OR.properties"));
 		} catch (IOException e) {
