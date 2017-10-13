@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Ecommerce test suite">
-  <test name="Shopping cart Test">
-    <classes>
-      <class name="com.sudha.shoppingcart.setup.OpenBrowser"/>
-      <class name="com.sudha.shoppingcart.tests.HomePageTest"/>
-      <class name="com.sudha.shoppingcart.tests.CartPageTest"/>
-     <class name="com.sudha.shoppingcart.pageobjects.LoginPage"/>
-     <class name="com.sudha.shoppingcart.tests.WishlistTest"/>
-      <class name="com.sudha.shoppingcart.setup.CloseBrowser"/>
-    </classes>
-  </test>
+<suite name="shopping cart test suite">
+
+	<test name="Shopping cart: Test on Firefox">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.sudha.shoppingcart.setup.OpenBrowser" />
+			<class name="com.sudha.shoppingcart.tests.HomePageTest" />
+			<class name="com.sudha.shoppingcart.tests.CartPageTest" />
+			<class name="com.sudha.shoppingcart.pageobjects.LoginPage" />
+			<class name="com.sudha.shoppingcart.tests.WishlistTest" />
+			<class name="com.sudha.shoppingcart.setup.CloseBrowser" />
+		</classes>
+	</test>
+
+	<test name="Shopping cart: Test on Chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="com.sudha.shoppingcart.setup.OpenBrowser" />
+			<class name="com.sudha.shoppingcart.tests.HomePageTest" />
+			<class name="com.sudha.shoppingcart.tests.CartPageTest" />
+			<class name="com.sudha.shoppingcart.pageobjects.LoginPage" />
+			<class name="com.sudha.shoppingcart.tests.WishlistTest" />
+			<class name="com.sudha.shoppingcart.setup.CloseBrowser" />
+		</classes>
+	</test>
+
 </suite>

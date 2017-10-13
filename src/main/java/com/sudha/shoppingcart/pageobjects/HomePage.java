@@ -16,8 +16,8 @@ public class HomePage {
 
 	}
 
-	private ExtentReports extent = ExtentReportManager.getInstance();
-	private ExtentTest test;
+	//private ExtentReports extent = ExtentReportManager.getInstance();
+	//private ExtentTest test;
 
 	@FindBy(xpath = ".//a[@id='modalLoginLinkAccountAccountBox']")
 	public WebElement loginButton;
