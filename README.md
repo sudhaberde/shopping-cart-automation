@@ -11,7 +11,7 @@ Flow of the Scenario:
 5. Move the items from the basket to the wishlist.
 
 # Prerequisites 
-###This automation project been designed to run on Mac OS ###
+### This automation project been designed to run on Mac OS ###
 * Chrome 60 (and greater) and Firefox 55.0 (and greater) browsers installed
 * Have [java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed
 * Have [maven](http://maven.apache.org/) installed
