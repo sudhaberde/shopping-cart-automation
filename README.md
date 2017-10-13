@@ -32,7 +32,7 @@ Flow of the Scenario:
 2. Each step of the flow has been logically treated as a Test. The success and failure of each step will be logged in an html based report. This report test_report.html will be generated in the base path itself. This report gives information in the Pie chart form as well as tabular form. Details of the execution will also be available under each link.
 3. The test also contains steps to clean up wishlist, logout and close browser as part of clean-up activity at the end of execution.
 
-#Scope for Improvement
+# Scope for Improvement
 1. Provide support for windows execution
 2. Extend browser support to IE and Safari
 3. Enable logout support for chrome browser execution
