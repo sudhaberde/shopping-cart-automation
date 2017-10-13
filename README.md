@@ -15,13 +15,14 @@ Flow of the Scenario:
 
 # Test Execution Steps:
 1. Install shopping-cart-automation project
-	1. Download the project zip from :[Named Link](https://github.com/sudhaberde/shopping-cart-automation)
-	2. Extract the zip file to the directory of choice (base-path)
+	1. Download the project zip from :(https://github.com/sudhaberde/shopping-cart-automation/archive/master.zip)
+	2. Extract the zip file to the directory of choice (hereafter referred to as base-path)
+	* You can also clone the codebase to base-path if you have GIT installed
 2. Go to the base-path directory 
 	Markup : `cd shopping-cart-automation`
 3. Run the maven command 
 	Markup : `mvn clean test`
-	(*) The first time execution of this command, it will take some time downloading the required packages, clear the cache.
+	The first time execution of this command, it will take some time downloading the required packages, clear the cache.
 
 
 # Note:
