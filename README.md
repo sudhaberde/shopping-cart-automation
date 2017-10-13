@@ -36,3 +36,8 @@ Flow of the Scenario:
 1. Provide support for windows execution
 2. Extend browser support to IE and Safari
 3. Enable logout support for chrome browser execution
+
+# Troubleshooting
+1.If the browser doesn't open it could be because of permission issue for the driver.Run the below command from base path to make it executable.
+`chmod 755 webdriver/bin/chromedriver`
+`chmod 755 webdriver/bin/geckodriver`
