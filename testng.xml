@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
+<suite name="Ecommerce test suite">
+  <test name="Shopping cart Test">
     <classes>
       <class name="com.sudha.shoppingcart.setup.OpenBrowser"/>
       <class name="com.sudha.shoppingcart.tests.HomePageTest"/>
       <class name="com.sudha.shoppingcart.tests.CartPageTest"/>
-      <class name="com.sudha.shoppingcart.pageobjects.LoginPage"/>
+     <class name="com.sudha.shoppingcart.pageobjects.LoginPage"/>
+     <class name="com.sudha.shoppingcart.tests.WishlistTest"/>
       <class name="com.sudha.shoppingcart.setup.CloseBrowser"/>
     </classes>
   </test>
