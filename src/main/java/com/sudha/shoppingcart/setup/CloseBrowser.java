@@ -10,6 +10,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.sudha.shoppingcart.setup.OpenBrowser;
+import com.sudha.shoppingcart.utils.TestUtils;
 import com.sudha.shoppingcart.pageobjects.WishList;
 import com.sudha.shoppingcart.reports.ExtentReportManager;
 
@@ -18,7 +19,8 @@ public class CloseBrowser {
 	private ExtentReports extent = ExtentReportManager.getInstance();
 	private ExtentTest test;
 	String firstWinHandle;
-
+  
+	//Test for Clearing the items from wishlist
 	@Test(priority = 18)
 	public void cleanUp() {
 		test = extent.startTest("Cleanup activity");
@@ -29,14 +31,16 @@ public class CloseBrowser {
 		WishList wishlist = new WishList(OpenBrowser.webDriver);
 
 		wishlist.switchPanel.click();
+		TestUtils.addDelay(5000);
 		wishlist.removeIcon.click();
 		OpenBrowser.webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
+		TestUtils.addDelay(5000);
 		test.log(LogStatus.INFO, "Cleanup activity completed");
 		extent.endTest(test);
 		extent.flush();
 	}
 
+	//Test for Logging out
 	@Test(priority = 19)
 	@Parameters({ "browser" })
 	public void LogOut(String browser) {
@@ -47,14 +51,17 @@ public class CloseBrowser {
 
 			Actions action = new Actions(OpenBrowser.webDriver);
 			action.moveToElement(wishList.myaccount).build().perform();
-			wishList.logout.get(4).click();
-
+			//wishList.logout.get(5).click();
+			 wishList.logout.click();
+			TestUtils.addDelay(5000);
 			test.log(LogStatus.INFO, "Logged out from Zalando");
 			extent.endTest(test);
 			extent.flush();
 		}
+		
 	}
 
+	//Close browser 
 	@Test(priority = 20)
 	public void quitBrowser() {
 		test = extent.startTest("closing Browser");

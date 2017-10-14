@@ -17,6 +17,7 @@ public class CartPageTest {
 
 	String firstWinHandle, secondWindowHandle;
 
+	//Test for changing the quantity on the cart 
 	@Test(priority = 8)
 	public void changeQuantity() {
 		test = extent.startTest("Change quantity");
@@ -34,6 +35,7 @@ public class CartPageTest {
 		extent.flush();
 	}
 
+	//Test for adding it to the Wishlist
 	@Test(priority = 9)
 	public void addtoWishList() {
 		test = extent.startTest("Add to Wishlist");

@@ -22,6 +22,7 @@ public class HomePageTest {
 
 	String firstWinHandle, secondWindowHandle, thirdWindowHandle;
 
+	//Test for searching the given article
 	@Test(priority = 5)
 	public void searchArticle() {
 		test = extent.startTest("Search article");

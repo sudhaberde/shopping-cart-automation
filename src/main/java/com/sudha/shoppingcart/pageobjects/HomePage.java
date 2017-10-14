@@ -16,21 +16,21 @@ public class HomePage {
 
 	}
 
-	//private ExtentReports extent = ExtentReportManager.getInstance();
-	//private ExtentTest test;
-
-	@FindBy(xpath = ".//a[@id='modalLoginLinkAccountAccountBox']")
-	public WebElement loginButton;
-
+	
+  
+    //Search box on the www.Zalando.de page
 	@FindBy(xpath = "//*[@id='searchContent']")
 	public WebElement searchButton;
-
+	
+    // Button for adding the item to cart
 	@FindBy(xpath = ".//button[@id='z-pdp-topSection-addToCartButton']")
 	public WebElement addToCart;
 
+	// Link for navigating to cart page on top navigation panel
 	@FindBy(xpath = ".//div[@class='z-navicat-header_userAccNaviItem']//a[@href='/cart/']")
 	public WebElement cart;
-
+    
+	//Link for navigating to Wishlist page on top navigation panel
 	@FindBy(xpath = ".//div[@class='z-navicat-header_userAccNaviItem']//a[@href='/wishlist/']")
 	public WebElement wishList;
 }

@@ -4,7 +4,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentReportManager {
 	public static ExtentReports extent;
-
+   
+	//Generates the  html report
 	public static ExtentReports getInstance() {
 
 		if (extent == null) {

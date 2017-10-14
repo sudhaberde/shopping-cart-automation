@@ -23,8 +23,8 @@ Flow of the Scenario:
 	* You can also clone the codebase to base-path if you have GIT installed
 2. Go to the base-path directory 
 	`cd shopping-cart-automation`
-3. Run the maven command 
-	`mvn clean test`
+3. Run the start script
+	`sh start.sh`
 	* The first time execution of this command will take some time for downloading the required packages. Also, please manually clear the browser cache.
 
 # Note:

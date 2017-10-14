@@ -8,7 +8,7 @@
 			<class name="com.sudha.shoppingcart.setup.OpenBrowser" />
 			<class name="com.sudha.shoppingcart.tests.HomePageTest" />
 			<class name="com.sudha.shoppingcart.tests.CartPageTest" />
-			<class name="com.sudha.shoppingcart.pageobjects.LoginPage" />
+			<class name="com.sudha.shoppingcart.setup.Login" />
 			<class name="com.sudha.shoppingcart.tests.WishlistTest" />
 			<class name="com.sudha.shoppingcart.setup.CloseBrowser" />
 		</classes>
@@ -20,7 +20,7 @@
 			<class name="com.sudha.shoppingcart.setup.OpenBrowser" />
 			<class name="com.sudha.shoppingcart.tests.HomePageTest" />
 			<class name="com.sudha.shoppingcart.tests.CartPageTest" />
-			<class name="com.sudha.shoppingcart.pageobjects.LoginPage" />
+			<class name="com.sudha.shoppingcart.setup.Login" />
 			<class name="com.sudha.shoppingcart.tests.WishlistTest" />
 			<class name="com.sudha.shoppingcart.setup.CloseBrowser" />
 		</classes>

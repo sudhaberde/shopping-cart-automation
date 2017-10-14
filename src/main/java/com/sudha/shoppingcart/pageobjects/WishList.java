@@ -16,18 +16,26 @@ public class WishList {
         
     }
 	
+	//Link for viewing the items on wishlist in a horizontal list manner
 	@FindBy(xpath=".//span[contains(@class,'SwitchPanel__iconList')]")
 	public WebElement switchPanel;
 	
+	//Link for removing the item from Wishlist
 	@FindBy(xpath=".//div[contains(@class,'iconClose z_wishlist_ArticleDetail')]")
 	public WebElement removeIcon;
 	
+	//Link for navigating 
 	@FindBy(xpath=".//div[@class='metaNaviIcons']//a[@href='/wishlist/']")
 	public WebElement wishList;
 	
-	@FindBy(xpath=".//div[@class='z-navicat-header_userAccNaviItem']//div[contains(@class,'Overlay')]")
-	public List<WebElement> logout;
+	//Link for logging out
+	//@FindBy(xpath=".//div[@class='z-navicat-header_userAccNaviItem']//div[contains(@class,'Overlay')]")
+	//public List<WebElement> logout;
 	
+	@FindBy(xpath=".//a[@href='/logout/']")
+	public WebElement logout;
+	
+	//Link for my account on the top panel
 	@FindBy(xpath=".//a[@tracking='click.header.account']")
 	public WebElement myaccount;		
 	

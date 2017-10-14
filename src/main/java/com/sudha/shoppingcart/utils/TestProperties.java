@@ -17,6 +17,7 @@ public class TestProperties {
 		return OR.getProperty(key);
 	}
 	
+	//loads the OR.properties file 
 	public static void loadProperties() {
 		String propFilePath = null;
 		try {

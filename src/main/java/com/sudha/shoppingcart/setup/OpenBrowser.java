@@ -22,6 +22,7 @@ public class OpenBrowser {
 	private ExtentReports extent = ExtentReportManager.getInstance();
 	private ExtentTest test;
 
+	//Launches the browser
 	@Test(priority = 1)
 	@Parameters({ "browser" })
 	public void startBrowser(String browser) {

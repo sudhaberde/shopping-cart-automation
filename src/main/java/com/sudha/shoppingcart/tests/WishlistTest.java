@@ -21,7 +21,8 @@ public class WishlistTest {
 	private ExtentTest test;
 
 	String firstWinHandle, secondWindowHandle;
-
+    
+	//Test for making sure that the item has been added to the Wishlist
 	@Test(priority = 14)
 	@Parameters({ "browser" })
 	public void checkWishlist(String browser) {
@@ -62,6 +63,8 @@ public class WishlistTest {
 		} else {
 			test.log(LogStatus.ERROR, "Verification of the item failed as the image is different");
 		}
+		TestUtils.addDelay(5000);
+		
 		extent.endTest(test);
 		extent.flush();
 	}
