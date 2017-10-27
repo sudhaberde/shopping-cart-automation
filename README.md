@@ -38,6 +38,11 @@ Flow of the Scenario:
 3. Enable logout support for chrome browser execution
 
 # Troubleshooting
-1.If the browser doesn't open it could be because of permission issue for the driver.Run the below command from base path to make it executable.
+1. Make sure you are running this program on Mac OS. Currently the application supports only Mac OS.
+2. If you get any error  while running the start script which says 'COMMAND NOT FOUND' make sure maven is installed properly and maven bin is added to the PATH.
+3.If the browser doesn't open it could be because of permission issue for the driver.Run the below command from base path to make it executable.
 `chmod 755 webdriver/bin/chromedriver`
 `chmod 755 webdriver/bin/geckodriver`
+4.Firefox browser version supported by application - 46.0
+  Chrome browser version supported by application - Version 61.0.3163.100 (Official Build) (64-bit)
+
