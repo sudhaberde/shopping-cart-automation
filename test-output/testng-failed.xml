@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [shopping cart test suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="Shopping cart: Test on Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.sudha.shoppingcart.tests.CartPageTest">
+        <methods>
+          <include name="addtoWishList"/>
+        </methods>
+      </class> <!-- com.sudha.shoppingcart.tests.CartPageTest -->
+      <class name="com.sudha.shoppingcart.setup.CloseBrowser">
+        <methods>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.sudha.shoppingcart.setup.CloseBrowser -->
+      <class name="com.sudha.shoppingcart.tests.WishlistTest">
+        <methods>
+          <include name="checkWishlist" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.sudha.shoppingcart.tests.WishlistTest -->
+      <class name="com.sudha.shoppingcart.setup.Login">
+        <methods>
+          <include name="userLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.sudha.shoppingcart.setup.Login -->
+    </classes>
+  </test> <!-- Shopping cart: Test on Chrome(failed) -->
+</suite> <!-- Failed suite [shopping cart test suite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Ecommerce test suite]">
+  <parameter name="browser" value="Firefox"/>
+  <test name="Shopping cart: Test on Firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.sudha.shoppingcart.setup.CloseBrowser">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="LogOut"/>
+        </methods>
+      </class> <!-- com.sudha.shoppingcart.setup.CloseBrowser -->
+      <class name="com.sudha.shoppingcart.tests.WishlistTest">
+        <methods>
+          <include name="checkWishlist" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.sudha.shoppingcart.tests.WishlistTest -->
+    </classes>
+  </test> <!-- Shopping cart: Test on Firefox(failed) -->
+</suite> <!-- Failed suite [Ecommerce test suite] -->
